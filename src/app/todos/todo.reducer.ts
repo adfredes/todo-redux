@@ -4,11 +4,7 @@ import { Todo } from './models/todo.model';
 import * as actions from './todo.actions';
 import { toggleAll } from './todo.actions';
 
-export const estadoInicial: Todo[] = [
-    new Todo('Salvar al mundo'),
-    new Todo('Robar bici'),
-    new Todo('Comprar comida')
-];
+export const estadoInicial: Todo[] = [];
 
 const _todoReducer = createReducer(
     estadoInicial,
